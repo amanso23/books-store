@@ -1,16 +1,19 @@
 import React from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { Book } from '../types';
 import BookPreview from './BookPreview';
+import { useViewTransitions } from '../hooks/useViewTransitions';
 
 interface Props {
   books: Book[];
 }
 
 const BookDetail: React.FC<Props> = ({ books }) => {
+  const {navigateWithTransition, scrollToTop} = useViewTransitions()
   const { id } = useParams<{ id: string }>();
   const bookId = parseInt(id || '0', 10)
   const book = books.find((book) => book.id === bookId);
+  
 
   if (!book) {
     return <Navigate to="/404" replace />;
@@ -18,6 +21,11 @@ const BookDetail: React.FC<Props> = ({ books }) => {
 
   const relatedBooks = books.filter(b => book.related_books_ids.includes(b.id));
 
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    scrollToTop()
+    navigateWithTransition()
+  }
 
   return (
     <main className="container mx-auto px-4 py-16 max-w-6xl">
@@ -33,17 +41,17 @@ const BookDetail: React.FC<Props> = ({ books }) => {
               <button className="w-full bg-black text-white font-semibold py-2 px-4 rounded-md hover:bg-gray-800 transition-colors duration-300 shadow-md text-lg">
                 Comprar ahora
               </button>
-              <Link to="/" >
-                <button className="w-full bg-white text-black font-semibold py-2 px-4 mt-4 rounded-md hover:bg-gray-100 transition-colors duration-300 border border-gray-300 shadow-sm text-lg">
+                <button 
+                  onClick={handleClick}
+                  className="w-full bg-white text-black font-semibold py-2 px-4 mt-4 rounded-md hover:bg-gray-100 transition-colors duration-300 border border-gray-300 shadow-sm text-lg">
                     Ver todos
                 </button>
-              </Link>
             </div>
           </div>
         </div>
         <div className="md:col-span-2 space-y-10">
           <div>
-            <h1 className="text-5xl font-black text-gray-900 leading-tight mb-6">{book.title}</h1>
+            <h1 className="text-5xl font-black text-gray-900 leading-tight mb-10">{book.title}</h1>
             <div className="flex items-center space-x-4">
               <img
                 src={book.author.image}
