@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "title": "Clean Code, un manual de desarrollo ágil de software",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436202607i/3735293.jpg",
+        "author": {
+            "name": "Robert C. Martin",
+            "image": "https://s.lubimyczytac.pl/upload/authors/42627/16464-352x500.jpg"
+        },
+        "description": "Este libro enseña los principios del código limpio, proporcionando ejemplos y prácticas recomendadas que ayudan a los desarrolladores a escribir un software más legible y mantenible. Se enfoca en la importancia de escribir código que no solo funcione, sino que sea fácil de entender y modificar, lo que resulta en una mayor productividad y menor riesgo de errores en el futuro. Los conceptos presentados son aplicables en cualquier lenguaje de programación, lo que lo convierte en una lectura esencial para todos los programadores.",
+        "publication_date": "2008",
+        "hashtags": ["#clean", "#desarrollo", "#programación", "#limpio", "#prácticas", "#profesionalismo", "#software"],
+        "related_books_ids": [2, 3, 4]
+    },
+    {
+        "id": 2,
+        "title": "El programador pragmático: de oficial a maestro",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1401432508i/4099.jpg",
+        "author": {
+            "name": "Dave Thomas",
+            "image": "https://developeronfire.com/assets/images/DaveThomas.jpg"
+        },
+        "description": "El libro aborda técnicas, herramientas y filosofías que permiten a los programadores evolucionar en su carrera y enfrentar los desafíos del desarrollo de software. Se centra en el desarrollo de habilidades prácticas y en la importancia de adaptarse a nuevas tecnologías y metodologías. A través de anécdotas y ejemplos, el autor invita a los lectores a reflexionar sobre su trabajo y a adoptar una mentalidad de crecimiento constante, lo que les ayudará a convertirse en programadores más efectivos y versátiles.",
+        "publication_date": "1999",
+        "hashtags": ["#pragmático", "#consejos", "#desarrollo", "#evolución", "calidad"],
+        "related_books_ids": [1, 3, 4]
+    },
+    {
+        "id": 3,
+        "title": "Code Complete: Un manual práctico de construcción de software",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1396837641i/4845.jpg",
+        "author": {
+            "name": "Steve McConnell",
+            "image": "https://stevemcconnell.com/wp-content/uploads/2020/10/SteveMcConnell-M.jpg"
+        },
+        "description": "Este libro ofrece una guía completa sobre la construcción de software, cubriendo desde la planificación hasta la implementación, y promoviendo las mejores prácticas para el desarrollo. Proporciona una mirada profunda a los procesos de desarrollo de software, centrándose en la calidad del código y la importancia de las revisiones. Con ejemplos claros y consejos prácticos, es un recurso valioso tanto para principiantes como para desarrolladores experimentados que buscan mejorar su técnica y conocimiento en la creación de software efectivo y eficiente.",
+        "publication_date": "2004",
+        "hashtags": ["#code", "#construcción", "#prácticas", "#calidad"],
+        "related_books_ids": [1, 2, 4]
+    },
+    {
+        "id": 4,
+        "title": "El Clean Coder: un código de conducta para programadores profesionales",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347470803i/10284614.jpg",
+        "author": {
+            "name": "Robert C. Martin",
+            "image": "https://s.lubimyczytac.pl/upload/authors/42627/16464-352x500.jpg"
+        },
+        "description": "En esta obra, el autor discute la importancia de la ética profesional y cómo los programadores pueden mejorar su práctica diaria a través de un enfoque responsable y consciente. Aborda temas como la comunicación efectiva con los miembros del equipo, la gestión del tiempo y la importancia de mantener una buena relación con los clientes. A través de consejos prácticos y ejemplos de la vida real, 'El Clean Coder' inspira a los programadores a convertirse en profesionales más íntegros y comprometidos con su trabajo.",
+        "publication_date": "2011",
+        "hashtags": ["#clean", "#ética", "#profesionalismo", "#responsabilidad", "#mejora"],
+        "related_books_ids": [1, 2]
+    }
+]
